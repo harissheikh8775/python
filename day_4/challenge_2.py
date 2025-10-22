@@ -1,6 +1,6 @@
 # Who will pay the bill
 # by using the random module
-
+# other method--> random.choice(friends) i.e by using the choice function
 import random
 friends=["Alice","Bob","Charlie","Haris","David"]
 
