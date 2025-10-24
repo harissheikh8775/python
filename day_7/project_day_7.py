@@ -62,7 +62,7 @@ while not game_over:
         print(stages[lives])
         if lives == 0:
             game_over = True
-            print("\n******************** YOU LOSE ********************")
+            print(f"\n******************** YOU LOSE IT WAS : {chosen_word} ********************")
 
     # Check if there are no more underscores (word completely guessed)
     if "_" not in display:
