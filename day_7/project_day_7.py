@@ -3,14 +3,14 @@
 # -----------------------------#
 
 import random
-import hangman_words  # module containing the word list
-import hangman_art  # module containing logo and stages (ASCII art)
+from hangman_words import word_list  # module containing the word list
+from hangman_art import logo,stages   # module containing logo and stages (ASCII art)
 
 # Print the Hangman game logo
-print(hangman_art.logo)
+print(logo)
 
 # Randomly choose a word from the imported word list
-chosen_word = random.choice(hangman_words.word_list)
+chosen_word = random.choice(word_list)
 print(chosen_word)  # (You can comment this out later for real gameplay)
 
 # Total lives a player has
@@ -59,7 +59,7 @@ while not game_over:
         print(f"You guessed '{guess}', that's not in the word. You lose a life.")
         lives -= 1
         # Print the hangman stage according to remaining lives
-        print(hangman_art.stages[lives])
+        print(stages[lives])
         if lives == 0:
             game_over = True
             print("\n******************** YOU LOSE ********************")
