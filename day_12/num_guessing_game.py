@@ -77,3 +77,48 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# **********************EASY LEVEL****************************
+"""from num_art import logo
+import random
+
+print(logo)
+print("Welcome to the Number Guessing Game!!!")
+print("I'm thinking of a number between 1 and 100.")
+
+# Generate a random number
+random_number = random.randint(1, 100)
+
+# Choose difficulty
+difficulty = input("Choose a difficulty. Type 'easy' or 'hard': ").lower()
+
+# Set lives based on difficulty
+lives = 10 if difficulty == "easy" else 5
+print(f"You have {lives} attempts remaining to guess the number.")
+
+# Game loop
+while lives > 0:
+    try:
+        guess = int(input("Make a guess: "))
+    except ValueError:
+        print("Please enter a valid number.")
+        continue
+
+    if guess == random_number:
+        print(f"🎉 You got it! The answer was {random_number}.")
+        break
+    elif guess > random_number:
+        print("Too high.")
+    else:
+        print("Too low.")
+
+    lives -= 1
+
+    if lives > 0:
+        print(f"Guess again. You have {lives} attempts remaining.")
+    else:
+        print(
+            f"💀 You've run out of guesses. The number was {random_number}. You lose."
+        )
+"""
