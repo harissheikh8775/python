@@ -28,7 +28,7 @@ DAY 11
 import random
 
 #  from replit import clear
-from art import logo
+from black_jack_art import logo
 
 
 def deal_card():
